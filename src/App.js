@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { Cards, Chart, CountryPicker } from "./components";
+import { Cards, Chart, CountryPicker, CopyRightText } from "./components";
 import styles from "./App.module.css";
 import { fetchData } from "./api";
 
@@ -30,6 +30,7 @@ class App extends Component {
         <Cards data={data} />
         <CountryPicker handleCountryChange={this.handleCountryChange} />
         <Chart data={data} country={country} />
+        <CopyRightText />
       </div>
     );
   }
